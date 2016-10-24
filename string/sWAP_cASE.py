@@ -1,8 +1,11 @@
-line = input()
-l = list(line)
-for i in range(len(l)):
-    if l[i].isupper():
-        l[i] = l[i].lower()
-    elif l[i].islower():
-        l[i] = l[i].upper()
-print(''.join(l))
+# https://www.hackerrank.com/challenges/swap-case
+
+
+raw = input()
+result = ''
+for letter in raw:
+    if letter.islower():
+        result += letter.toupper()
+    else:
+        result += letter.tolower()
+print(result)
