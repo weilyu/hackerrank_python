@@ -1,0 +1,1 @@
+# https://www.hackerrank.com/challenges/most-commonsline = input()freq = dict()for c in line:    if c in freq.keys():        freq[c] += 1    else:        freq[c] = 1lst = list()for key, value in freq.items():    lst.append((value, key))lst.sort()lst.reverse()for a, b in lst[:3]:    print(b, a)
